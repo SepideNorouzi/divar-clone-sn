@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["src/assets/*"],
+      "components/*": ["src/components/*"],
+      "configs/*": ["src/configs/*"],
+      "pages/*": ["src/pages/*"],
+      "router/*": ["src/router/*"],
+      "services/*": ["src/services/*"],
+      "styles/*": ["src/styles/*"],
+      "utils/*": ["src/utils/*"]
+    }
+  }
+}
+// why do this?
+// this is a proffessional way of handling the vscode autofills. when we created the paths in
+// vite.config.js, we can manually change the path of sth that is imported and delete the extra ../../
+// but by doing this, you tell the vscode to auto import the components this way as well so u dont need to
+// edit the path afterwards and it automatically uses absolute import.
